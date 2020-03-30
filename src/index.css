@@ -223,7 +223,7 @@ main {
   }
 
   .logo {
-    margin-top: auto;
+    margin: auto;
     background-size: 100%;
   }
 }
