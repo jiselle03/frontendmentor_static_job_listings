@@ -58,8 +58,7 @@ main {
 
 .top-line,
 .job-text,
-.keywords,
-.job-post {
+.keywords {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -84,13 +83,20 @@ main {
 
 .job-post,
 .filters.container {
-  width: 85vw;
+  width: 75vw;
+}
+
+.job-post {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
 }
 
 .job-text {
   justify-content: space-between;
   flex: 1;
   align-self: center;
+  margin: auto 1em;
 }
 
 .featured,
@@ -192,8 +198,13 @@ main {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 10px 10px 20px -5px #ccc;
-  margin: 2em auto;
+  margin: 3em auto;
   padding: 1em;
+}
+
+.logo {
+  margin-top: -50px;
+  background-size: 75%;
 }
 
 @media (min-width: 376px) {
@@ -201,7 +212,18 @@ main {
     background-image: url("./assets/bg-header-desktop.svg");
   }
 
+  .job-post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .bottom-line {
     border: none;
+  }
+
+  .logo {
+    margin-top: auto;
+    background-size: 100%;
   }
 }
