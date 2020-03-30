@@ -30,7 +30,7 @@ small {
 
 p {
   font-size: 15px;
-  line-height: 0.5em;
+  line-height: 1.25em;
 }
 
 .app-header {
@@ -57,7 +57,7 @@ main {
 }
 
 .top-line,
-.middle-line,
+.job-text,
 .keywords,
 .job-post {
   display: flex;
@@ -65,21 +65,32 @@ main {
   flex-wrap: wrap;
 }
 
+.top-line {
+  justify-content: flex-start;
+}
+
+.middle-line {
+  margin: 1em auto;
+}
+
+.bottom-line {
+  border-bottom: 1px solid darkgrey;
+}
+
+.keywords {
+  align-self: center;
+  margin-top: 0.75em;
+}
+
 .job-post,
 .filters.container {
   width: 85vw;
 }
 
-.top-line {
-  justify-content: flex-start;
-}
-
-.job-info {
-  flex: 1;
-}
-
-.middle-line {
+.job-text {
   justify-content: space-between;
+  flex: 1;
+  align-self: center;
 }
 
 .featured,
@@ -188,5 +199,9 @@ main {
 @media (min-width: 376px) {
   .app-header {
     background-image: url("./assets/bg-header-desktop.svg");
+  }
+
+  .bottom-line {
+    border: none;
   }
 }
