@@ -210,6 +210,7 @@ main {
 @media (min-width: 376px) {
   .app-header {
     background-image: url("./assets/bg-header-desktop.svg");
+    background-repeat: repeat-x;
   }
 
   .job-post {
